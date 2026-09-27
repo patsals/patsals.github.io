@@ -6,8 +6,8 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Patrick Salsbury</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="Patrick Salsbury is a data engineer building reliable, high-throughput data platforms and analytics systems." name="description">
+  <meta content="data engineer, distributed systems, data science, Patrick Salsbury" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/personal.png" rel="icon">
@@ -59,9 +59,12 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>I'm Patrick Salsbury</h1>
-      <p>and I like <span class="typed" data-typed-items="data, programming, working with others"></span>.</p>
-      <p class = "resume"><a href = "assets/Patrick Salsbury Resume.pdf" target="_blank"> See Resume</a></p>
+      <!-- <span class="hero-eyebrow">Data Scien and Engineering</span> -->
+      <h1>Patrick Salsbury</h1>
+      <p class="hero-intro">I build <span class="typed" data-typed-items="high-throughput pipelines, reliable data platforms, real-time analytics"></span>.</p>
+      <div class="hero-actions">
+        <a class="primary-action" href="assets/Patrick Salsbury Resume.pdf" target="_blank" rel="noopener">View resume <i class="bi bi-arrow-up-right"></i></a>
+      </div>
       <!--
       <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
       <div class="social-links">
@@ -88,18 +91,15 @@
 
         <div class="row">
           <div class="col-lg-4">
-            <img src="assets/img/patrick hawaii photo.jpg" class="img-fluid" alt="">
+            <img src="assets/img/patrick hawaii photo.jpg" class="img-fluid about-photo" alt="Patrick Salsbury outdoors in Hawaii">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <p>My name is Patrick Salsbury and I am a data-driven specialist with a strong foundation in data science and engineering.
-              I have built and deployed high-performance data systems, scalable pipelines, robust databases, and analytical tools to enable
-              organizations to make smarter decisions. My passion for creating meaningful impact is reflected across my work experiences 
-              where I have been responsible for leading data projects from start to finish - transforming the way existing teams operate using data.</p>
+            <span class="section-kicker">A little about me</span>
+            <p>I am a data engineer with a foundation in data science and a focus on distributed systems. I design production platforms, streaming and batch pipelines, databases, and analytical tools that make large-scale data easier to trust and use.</p>
+            <p>At Tesla, I have led projects from proof of concept through production - improving query latency, automating engineering workflows, and enabling real-time observability for hardware test programs.</p>
             </div>
             
           </div>
-        </div>
-
       </div>
 
     </section>
@@ -126,18 +126,15 @@
         <dl class="alt skills">
           <dt><img src="assets/img/library_svg.png" width="65" height="65"></dt>
           <dd class="color"><b>Libraries:</b></dd>
-          <dd>Pandas, PySpark, FastAPI, Dash, DuckDB, Sci-Kit Learn, Tensorflow, SciPy, Plotly, Seaborn</dd>
+          <dd>PySpark, Pandas, Polars, FastAPI, Plotly, Dash, Scikit-learn, XGBoost, TensorFlow, PyTorch</dd>
         </dl>
         <dl class="alt skills">
           <dt><img src="assets/img/software_svg.png" width="65" height="65"></dt>
-          <dd class="color"><b>Softwares:</b></dd>
-          <dd>AWS, Azure, Jira, Git, Databricks, Power BI, Tableau</dd>
+          <dd class="color"><b>Platforms &amp; Tools:</b></dd>
+          <dd>Dagster, Airflow, Spark, Flink, Kafka, Docker, Kubernetes, Grafana, Git, Power BI, Tableau</dd>
         </dl>
-        </div>
-
       </div>
     </section><!-- End Skills Section -->
-  </section>
 
     <!-- ======= Resume Section ======= -->
     <section id="experience" class="resume">
@@ -151,7 +148,7 @@
             <div class="resume-item">
               <div class="row">
                 <div class="col-lg-1">
-                  <img src="assets/img/tesla2.jpg" width="80" height="80">
+                  <img src="assets/img/tesla2.jpg" width="80" height="80" alt="Tesla logo">
                 </div>
                 <div class="col-lg-5">
                   <h4>Data Engineer</h4>
@@ -161,16 +158,18 @@
                 </div>
               </div>
               <ul>
-                <li>Lead the proof-of-concept, design, and development of a ClickHouse database for time-series data generated from 100+ hardware devices, achieving 20x faster analytical queries compared to Iceberg; this enabled engineers to perform data analysis faster, increasing productivity.</li>
-                <li>Deployed a REST API using FastAPI with Pydantic to enable 100+ devices to store test metadata and metrics efficiently.</li>
-                <li>Designed and implemented a MySQL database to model the logging, tracking, and data analysis of vehicle part components for a wide range of reliability tests the Hardware Test team conducts.</li>
-                <li>Built and maintained scalable data pipelines using Airflow and Spark to process petabytes of vehicle data and terabytes of hardware test data, integrating MySQL, S3 storage, Iceberg datasets, and external APIs to fulfill requests for various stakeholders.</li>
+                <li><strong>Eliminated 20+ hours of manual work each week</strong> by designing and owning a production Dagster orchestration platform on Kubernetes, delivering 30+ automated ETL, anomaly detection, and real-time alerting pipelines.</li>
+                <li><strong>Reduced time-series query latency by 20x</strong> by leading the migration from Apache Iceberg to ClickHouse, scaling the platform to 100B+ rows and accelerating analysis for test and design engineering teams.</li>
+                <li><strong>Cut end-to-end data latency from 30 seconds to under 500ms</strong> with a PyFlink and Kafka pipeline processing 3M+ messages per minute across 100+ hardware test devices.</li>
+                <li><strong>Centralized traceability for 50K+ vehicle parts</strong> by designing a MySQL metadata model and FastAPI service that replaced manual tracking workflows across 100+ devices.</li>
+                <li>Built and maintained 20+ production Airflow and Spark pipelines processing petabytes of vehicle test data, integrating Iceberg, MySQL, PostgreSQL, and other sources.</li>
+                <li>Migrated Dagster, FastAPI, and Flink services to Kubernetes with GitHub Actions CI/CD, then implemented Prometheus and Grafana observability across the platform.</li>
               </ul>
             </div>
             <div class="resume-item">
               <div class="row">
                 <div class="col-lg-1">
-                  <img src="assets/img/tesla2.jpg" width="80" height="80">
+                  <img src="assets/img/tesla2.jpg" width="80" height="80" alt="Tesla logo">
                 </div>
                 <div class="col-lg-5">
                   <h4>Data Science Intern</h4>
@@ -180,52 +179,33 @@
                 </div>
               </div>
               <ul>
-                <li>Developed a comprehensive internal data analytics application for the hardware test team, enabling them to monitor device usage, analyze key performance indicators, and get notified of statistically significant anomaly data points during live tests; using Plotly Dash hosted on a Linux server.</li>
-                <li>Analyzed over 10 billion entries of fleet data to identify root causes of vehicle fault errors; went forward and created an interactive dashboard using Bokeh Panel and Trino to showcase these different key performance indicators and allow users to identify issues themselves.</li>
-                <li>Collaborated with test engineers and project managers from various teams to understand and meet various data goals ranging from ad-hoc analysis reports to entire new dashboard creations.</li>
+                <li>Built an internal Plotly Dash application on Kubernetes for hardware-test device usage, KPI monitoring, and statistical analysis.</li>
+                <li><strong>Improved oil-pump reliability by 50%</strong> by deploying an Isolation Forest model that identified manufacturing defects and supplier variability.</li>
+                <li>Analyzed 10B+ fleet records to isolate vehicle fault root causes, then built a self-service Bokeh Panel and Trino dashboard for engineering teams.</li>
               </ul>
             </div>
             <div class="resume-item">
               <div class="row">
                 <div class="col-lg-1">
-                  <img src="assets/img/evercharge.jpg" width="80" height="80">
+                  <img src="assets/img/evercharge.jpg" width="80" height="80" alt="EverCharge logo">
                 </div>
                 <div class="col-lg-5">
-                  <h4>Data Science & Engineering Intern</h4>
+                  <h4>Data Engineer Intern</h4>
                   <h6><strong>EverCharge</strong><em> - Palo Alto, CA</em></h6>
                   <h5>June 2023 - September 2023</h5>
                     
                 </div>
               </div>
               <ul>
-                <li>Identified bugs, hardware issues, and installation problems that were previously unknown affecting 5-10% of all products by performing time series analysis, inferential analysis, and anomaly detection.</li>
-                <li>Engineered Retool dashboards to showcase data validation and integrity issues while optimizing PostgreSQL database queries.</li>
-                <li>Published 3 different data science reports that communicated answers to stakeholders’ questions and highlighted areas of concern.</li>
-                <li>Initiated a proof-of-concept project that involved training an ML anomaly detection model to identify abnormal device behavior.</li>
+                <li>Identified previously unknown hardware, software, and installation issues affecting 5-10% of products through time-series analysis, statistical inference, and anomaly detection in Python and SQL.</li>
+                <li>Built Retool dashboards for device-performance KPIs and improved their responsiveness through PostgreSQL query optimization.</li>
+                <li>Published three stakeholder-facing data science reports and developed a proof-of-concept anomaly detection model for abnormal device behavior.</li>
               </ul>
             </div>
             <div class="resume-item">
               <div class="row">
                 <div class="col-lg-1">
-                  <img src="assets/img/thecoderschool.PNG" width="80" height="80">
-                </div>
-                <div class="col-lg-5">
-                  <h4>Computer Science Coach</h4>
-                  <h6><strong>TheCoderSchool</strong><em> - Encinitas, CA</em></h6>
-                  <h5>February 2023 - March 2023</h5>
-                    
-                </div>
-              </div>
-              <ul>
-                <li>Coached students of levels ranging from Elementary to Highschool within the topics of computer science and software engineering</li>
-                <li>Designed personalized curriculum including projects and learning paths to support individuals from different backgrounds and experience</li>
-                <li>Supported the development of apps in Python and Scratch over 4-6 week time while simultaneously teaching the fundamentals of coding</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <div class="row">
-                <div class="col-lg-1">
-                  <img src="assets/img/hme.PNG" width="80" height="80">
+                  <img src="assets/img/hme.PNG" width="80" height="80" alt="HM Electronics logo">
                 </div>
                 <div class="col-lg-5">
                   <h4>Data Science Intern</h4>
@@ -234,34 +214,13 @@
                 </div>
               </div>
               <ul>
-                <li>Analyzed customers device data improving the quality of production and customer relationships by showcasing areas of concern.</li>
-                <li>Led sprint presentations to showcase findings using Python, SQL, and Power BI to influence the decision-making of the product managers and software engineers.</li>
-                <li>Collected semi-structured console log data from 100+ customer devices to ingest into a Azure Blob Data Lake.</li>
-                <li>Automated the ETL process on 30+ million raw records of data at once using Apache Spark on Databricks(Microsoft Azure).</li>
-                <li>Predicted customer device failure using Classification and Clustering ML models to isolate variable indicators for tech support.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <div class="row">
-                <div class="col-lg-1">
-                  <img src="assets/img/deanza.PNG" width="80" height="80">
-                </div>
-                <div class="col-lg-5">
-                  <h4>Mathematics Tutor</h4>
-                  <h6><strong>De Anza College</strong><em> - Cupertino, CA</em></h6>
-                    <h5>August 2019 - April 2021</h5>
-
-                </div>
-              </div>
-              <ul>
-                <li>Instructed mathematical subjects such as Precalculus, Calculus, Differential Equations, and Linear Algebra to college students</li>
-                <li>Administered individual study sessions and group workshops ranging anywhere from 5-10 people at once</li>
-                <li>Maximized individual tutee’s test results up to the 90%+ range and increased rates of passing by more than 50%.</li>
+                <li>Analyzed customer-device telemetry to surface production-quality issues and strengthen customer support.</li>
+                <li>Extracted semi-structured console logs from 100+ devices into Azure Blob Storage and automated ETL across 30M+ records with PySpark on Databricks.</li>
+                <li>Built classification and clustering models to predict device failure and isolate indicators for technical support teams.</li>
+                <li>Presented findings built with Python, SQL, and Power BI during Agile sprints, informing product and software engineering decisions.</li>
               </ul>
             </div>
           </div>
-        </div>
-
       </div>
     </section><!-- End Resume Section -->
 
@@ -277,61 +236,28 @@
             <div class="resume-item">
               <div class="row">
                 <div class="col-lg-1">
-                  <img src="assets/img/ucsd.png" width="65" height="65">
+                  <img src="assets/img/cu.png" width="65" height="65" alt="Columbia University logo">
                 </div>
-                <div class="col-lg-5">
-                  <h4>University of California, San Diego</h4>
-                    <h5>September 2021 - Present</h5>
-                    <p><em>B.S. - Data Science</em></p>
+                <div class="col-lg-7">
+                  <h4>Columbia University</h4>
+                  <h5>January 2026 - Present</h5>
+                  <p><em>M.S. Computer Science · Distributed Systems Specialization · Remote, part-time</em></p>
                 </div>
               </div>
-              <dl class="alt">
-                <dt>Relevant Coursework:</dt>
-                <dd>Data Management, Machine Learning Foundations, Intro to Deep Learning, Applications of Data Science, Data Analysis & Inference, Business Analytics</dd>
-                <dt>Involvements:</dt>
-                <dd>- Delta Sigma Pi : President, Chancellor, Vice President of Scholarships & Awards </dd>
-                <dd>- Data Science Student Society : Member</dd>
-              </dl>
             </div>
             <div class="resume-item">
               <div class="row">
                 <div class="col-lg-1">
-                  <img src="assets/img/deanza.PNG" width="65" height="65">
+                  <img src="assets/img/ucsd.png" width="65" height="65" alt="UC San Diego logo">
                 </div>
-                <div class="col-lg-5">
-                  <h4>De Anza College</h4>
-                    <h5>September 2018 - June 2021</h5>
-                    <p><em>A.S. - Computer Science</em></p>
+                <div class="col-lg-7">
+                  <h4>University of California, San Diego</h4>
+                  <h5>September 2021 - March 2025</h5>
+                  <p><em>B.S. Data Science</em></p>
                 </div>
               </div>
-              <dl class="alt">
-                <dt>Relevant Coursework:</dt>
-                <dd>Data Science Fundamentals, Data Structures & Algorithms, Object Oriented Analysis and Design</dd>
-                <dt>Involvements:</dt>
-                <dd>- Honor Society : Member</dd>
-                <dd>- Computer Repair Technician</dd>
-              </dl>
             </div>
           </div>
-          
-          <h4 class="additional_education_title">Additional Education</h4>
-          <div>
-                <h5 class="additional_education">IBM Data Engineering (Coursera)</h4>
-              <dl class="alt certifications">
-                <dt>Skills:</dt>
-                <dd>MySQL, PostgreSQL, IBM DB2, Apache Spark, Apache Airflow</dd>
-              </dl>
-
-              <h5 class="additional_education">Google Data Analytics (Coursera)</h4>
-              <dl class="alt certifications">
-                <dt>Skills:</dt>
-                <dd>Python, SQL, Excel, Tableau, R</dd>
-              </dl>
-          </div>
-          </div>
-          
-        </div>
-
       </div>
 
     </section><!-- End Facts Section -->
@@ -907,7 +833,7 @@
 
           <dl class="alt footer">
             <dt>Location</dt>
-            <dd>San Diego, California / San Jose, California</dd>
+            <dd>Mountain View, California</dd>
             <dt>Email</dt>
             <dd>p.r.salsbury@gmail.com</dd>
             <dt>LinkedIn</dt>
